@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from models import User, Coords, Level, Pereval, Images
+from .models import User, Coords, Level, Pereval, Images
 
 
 class UserSerializer(serializers.ModelSerializer):
