@@ -1,0 +1,26 @@
+{
+    "user": {
+        "fam": "G",
+        "name": "V",
+        "otc": "S",
+        "email": "test@mail.ru",
+        "phone": "+7777777"
+    },
+    "coords": {
+        "latitude": "37.2222",
+        "longitude": "37.6666",
+        "height": "2345"
+    },
+    "level": {
+        "winter": "1a",
+        "summer": "a",
+        "autumn": "a",
+        "spring": "a"
+    },
+    "images": [{"data":"https://www.zynovo.com/wp-content/uploads/2016/10/Magento_Success.jpg", "title":"Success"}],
+    "beautyTitle": "G",
+    "title": "s",
+    "other_titles": "w",
+    "connect": "s",
+    "status": "new"
+}
