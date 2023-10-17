@@ -5,24 +5,24 @@ from rest_framework import viewsets
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
-    serializers_class = UserSerializer
+    serializer_class = UserSerializer
 
 
 class CoordsViewSet(viewsets.ModelViewSet):
     queryset = Coords.objects.all()
-    serializers_class = CoordsSerializer
+    serializer_class = CoordsSerializer
 
 
 class LevelViewSet(viewsets.ModelViewSet):
     queryset = Level.objects.all()
-    serializers_class = LevelSerializer
+    serializer_class = LevelSerializer
 
 
 class ImagesViewSet(viewsets.ModelViewSet):
     queryset = Images.objects.all()
-    serializers_class = ImagesSerializer
+    serializer_class = ImagesSerializer
 
 
 class PerevalViewSet(viewsets.ModelViewSet):
     queryset = Pereval.objects.all()
-    serializers_class = PerevalSerializer
+    serializer_class = PerevalSerializer
