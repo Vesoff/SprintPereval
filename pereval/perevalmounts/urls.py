@@ -4,9 +4,9 @@ from rest_framework import routers
 from .views import PerevalViewSet
 
 router = routers.DefaultRouter()
-router.register(r'pereval', PerevalViewSet, basename='pereval')
+router.register(r'SubmitData', PerevalViewSet, basename='SubmitData')
 
 urlpatterns = [
-    path('submitData/', include(router.urls)),
-    path('', lambda request: redirect('/submitData/pereval', permanent=False))
+    path('pereval/', include(router.urls)),
+    path('', lambda request: redirect('pereval/SubmitData/', permanent=False))
 ]
