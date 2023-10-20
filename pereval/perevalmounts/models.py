@@ -5,7 +5,7 @@ class User(models.Model):
     fam = models.CharField(max_length=50, verbose_name='Фамилия')
     name = models.CharField(max_length=50, verbose_name='Имя')
     otc = models.CharField(max_length=50, verbose_name='Отчество')
-    email = models.CharField(max_length=50, unique=True, verbose_name='E-mail')
+    email = models.CharField(max_length=50, verbose_name='E-mail')
     phone = models.CharField(max_length=50, verbose_name='Телефон')
 
 

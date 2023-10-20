@@ -29,3 +29,4 @@ class PerevalViewSet(viewsets.ModelViewSet):
     serializer_class = PerevalSerializer
     filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
     filterset_fields = ["user__email"]
+
