@@ -3,6 +3,7 @@ from .models import User, Coords, Level, Images, Pereval
 from rest_framework import viewsets
 import django_filters
 
+
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
@@ -26,3 +27,5 @@ class ImagesViewSet(viewsets.ModelViewSet):
 class PerevalViewSet(viewsets.ModelViewSet):
     queryset = Pereval.objects.all()
     serializer_class = PerevalSerializer
+    filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
+    filterset_fields = ["user__email"]
