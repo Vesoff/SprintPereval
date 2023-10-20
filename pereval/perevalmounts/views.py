@@ -1,7 +1,7 @@
 from .serializers import UserSerializer, CoordsSerializer, LevelSerializer, ImagesSerializer, PerevalSerializer
 from .models import User, Coords, Level, Images, Pereval
 from rest_framework import viewsets
-
+import django_filters
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
