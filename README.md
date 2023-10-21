@@ -115,3 +115,7 @@ class PerevalSerializer(WritableNestedModelSerializer):
 Проект развернут в облаке благодаря ресурсу [pythonanywhere](https://www.pythonanywhere.com/) с использованием SQLite бд.
 
 Проект доступен по адресу: http://vesoff.pythonanywhere.com/
+
+### Сгенерированная документация SWAGGER c помощью DRF_YASG.
+
+Доступна по адресу: https://vesoff.pythonanywhere.com/redoc/
