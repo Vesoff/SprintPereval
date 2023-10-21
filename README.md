@@ -71,8 +71,47 @@ _Основная модель `Pereval`, включающая в себя по�
 
 _Основной сериализатор содержащий в себе остальные:_
 
-*     class PerevalSerializer(WritableNestedModelSerializer):
-*     user = UserSerializer()
-*     coords = CoordsSerializer()
-*     level = LevelSerializer(allow_null=True)
-*     images = ImagesSerializer(many=True)
+```
+class PerevalSerializer(WritableNestedModelSerializer):
+    user = UserSerializer()
+    coords = CoordsSerializer()
+    level = LevelSerializer(allow_null=True)
+    images = ImagesSerializer(many=True)
+```
+
+### [Пример](https://github.com/Vesoff/SprintPereval/blob/master/JSON%20raw_data%20example) JSON данных:
+
+```
+{
+    "user": {
+        "fam": "G",
+        "name": "V",
+        "otc": "S",
+        "email": "test@mail.ru",
+        "phone": "+7777777"
+    },
+    "coords": {
+        "latitude": "37.2222",
+        "longitude": "37.6666",
+        "height": "2345"
+    },
+    "level": {
+        "winter": "1a",
+        "summer": "a",
+        "autumn": "a",
+        "spring": "a"
+    },
+    "images": [{"data":"https://www.zynovo.com/wp-content/uploads/2016/10/Magento_Success.jpg", "title":"Success"}],
+    "beautyTitle": "G",
+    "title": "s",
+    "other_titles": "w",
+    "connect": "s",
+    "status": "new"
+}
+```
+
+### Развертывание приложения в облаке.
+
+Проект развернут в облаке благодаря ресурсу [pythonanywhere](https://www.pythonanywhere.com/) с использованием SQLite бд.
+
+Проект доступен по адресу: http://vesoff.pythonanywhere.com/
